@@ -1,0 +1,42 @@
+body {
+  background-color: #fff8f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imageContainer {
+  width: 50vw;
+  height: 50vh;
+  border: 0.2vh solid #000000;
+}
+
+#preview {
+  max-height: 100%;
+  max-width: 100%;
+  margin: auto;
+}
+
+.buttons {
+  width: 50vw;
+  height: 30vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+button {
+  width: 40%;
+  height: 30%;
+  margin-top: 3vh;
+  background-color: #429aff;
+  font-size: 5vh;
+  
+  border-radius: 2vh;
+}
+
+output {
+  width: 50vw;
+  height: 30vh;
+}

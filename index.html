@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Text on the image detector</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="imageContainer">
+            <img id="preview" src="" alt="Preview Image" style="max-width: 500px;"><br>
+        </div>
+        <div class="buttons">
+            <input type="file" id="imageInput" accept="image/*">
+            <button id="confirm" onclick="showPreview()">Confirm</button>
+            <!-- Кнопка для початку розпізнавання тексту -->
+            <button id="detect" onclick="recognizeText()">Detect</button>
+        </div>
+        <!-- Місце для виведення розпізнаного тексту -->
+        <div id="output"></div>
+
+        <script src="https://cdn.jsdelivr.net/npm/tesseract.js@2"></script>
+        <script src="scripts/main.js"></script>
+    </body>
+</html>
